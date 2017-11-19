@@ -1,0 +1,64 @@
+.condensed-inline-panel__card {
+    border-radius: 4px;
+}
+
+.condensed-inline-panel__card-header {
+    height: 40px;
+    padding-left: 1.2em;
+}
+.condensed-inline-panel__card-header > h2 {
+    font-size: 1.25em;
+    line-height: 40px;
+    width: calc(100% - 92px);
+}
+.condensed-inline-panel__actions {
+    height: 40px;
+}
+.condensed-inline-panel__action {
+    padding-top: 0;
+    height: 40px;
+}
+.condensed-inline-panel__action.icon {
+    font-size: 1.4em;
+    line-height: 2.1em;
+    width: 40px;
+}
+.condensed-inline-panel__action-delete {
+    color: #cd3238;
+}
+.condensed-inline-panel__delete-confirm-message {
+    right: 80px;
+    line-height: 40px;
+}
+.condensed-inline-panel__action-delete-confirm {
+    color: #189370;
+}
+.condensed-inline-panel__action-delete-confirm:hover {
+    background-color: #189370;
+    color: #ffffff;
+}
+.condensed-inline-panel__action-delete-confirm-cancel {
+    color: #cd3238; 
+}
+.condensed-inline-panel__action-delete-confirm-cancel:hover {
+    background-color: #cd3238;
+}
+.condensed-inline-panel__gap-pseudoform {
+    border-radius: 4px;
+    margin: 8px 0 5px;
+    height: 40px;
+}
+
+.condensed-inline-panel__card-header > h2 {
+    width: calc(100% - 85px);
+}
+
+.condensed-inline-panel__add-button:before,
+.condensed-inline-panel__action:before {
+    margin-right: 0;
+}
+
+.condensed-inline-panel__card--changed .condensed-inline-panel__card-header,
+.condensed-inline-panel__card--new .condensed-inline-panel__card-header{
+    padding-left: calc(1.2em - 2px);
+}
