@@ -5,14 +5,12 @@ import json
 import six
 
 import django
+import wagtail
 from django import forms
 from django.conf import settings
 from django.core.serializers.json import DjangoJSONEncoder
 from django.utils.translation import ugettext_lazy as _
-
 from modelcluster.forms import BaseChildFormSet
-
-import wagtail.VERSION
 
 if wagtail.VERSION >= (2, 0):
     from wagtail.admin.edit_handlers import BaseInlinePanel
