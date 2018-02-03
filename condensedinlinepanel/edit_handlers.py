@@ -177,19 +177,18 @@ class BaseCondensedInlinePanel(InlinePanel):
         super(BaseCondensedInlinePanel, self).__init__(*args, **kwargs)
         self.formset.to_json()
 
-    @classmethod
-    def required_formsets(cls):
-        child_edit_handler_class = cls.get_child_edit_handler_class()
+    def required_formsets(self):
+        child_edit_handler_class = self.get_child_edit_handler_class()
 
         return {
-            cls.relation_name: {
-                'formset': cls.formset_class,
+            self.relation_name: {
+                'formset': self.formset_class,
                 'fields': child_edit_handler_class.required_fields(),
                 'widgets': child_edit_handler_class.widget_overrides(),
-                'min_num': cls.min_num,
-                'validate_min': cls.min_num is not None,
-                'max_num': cls.max_num,
-                'validate_max': cls.max_num is not None
+                'min_num': self.min_num,
+                'validate_min': self.min_num is not None,
+                'max_num': self.max_num,
+                'validate_max': self.max_num is not None
             }
         }
 
